@@ -20,10 +20,10 @@ jobs:
           # タグが v1.0/resource のような形式を想定している場合
           MAJOR=$(echo $TAG | cut -d'/' -f1)
           MINOR=$(echo $TAG | cut -d'/' -f2)
-          FILENAME="${MAJOR}_Japanese-Potion_${MINOR}.zip"
-          
+          FILENAME="${MAJOR}_Japanese-Death-Text_${MINOR}.zip"
+
           zip -r "${FILENAME}" assets/ pack.mcmeta
-          
+
           # 出力値をセット
           echo "zip_file=${FILENAME}" >> $GITHUB_OUTPUT
 
